@@ -6,9 +6,6 @@
     }elseif($_POST['YesorNo'] == true){
       $question = $_POST['YesorNo'];
       $firsttime = 1;
-    }else{
-      $firsttime = 2;
-    }
 ?>
 
 <html>
@@ -25,15 +22,12 @@
         print "<input type=\"submit\" name=\"status\" value=\"送信\">\n";
         print "</form>\n";
 
-    }elseif($firsttime == 1){
+    }else{
         print $syouhin . "<br><br>";
         print "登録しますか？<br>\n";
         print "<form method=\"post\">\n";
         print "<input type=\"submit\" name=\"status\" value=\"もう一度\">\n";
         print "</form>\n";
-    }elseif($firsttime == 2){
-
-    }
 ?>
 
 </body>
