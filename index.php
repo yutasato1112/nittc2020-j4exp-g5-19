@@ -1,7 +1,7 @@
 <?php
     if(isset($_POST['syouhinmei']) == true){
       $syouhin = htmlspecialchars($_POST['syouhinmei'], ENT_QUOTES);
-      $kakaku = $_POST['price'];
+      $kakaku = htmlspecialchars($_POST['price'], ENT_QUOTES);
       $firsttime = 0;
     }else{
       $firsttime = 1;
