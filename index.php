@@ -3,9 +3,9 @@
       $syouhin = htmlspecialchars($_POST['syouhinmei'], ENT_QUOTES);
       $kakaku = $_POST['price'];
       $firsttime = 0;
-    }elseif($_POST['YesorNo'] == true){
-      $question = $_POST['YesorNo'];
+    }else{
       $firsttime = 1;
+    }
 ?>
 
 <html>
