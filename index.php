@@ -28,6 +28,7 @@
         print "<form method=\"post\">\n";
         print "<input type=\"submit\" name=\"status\" value=\"もう一度\">\n";
         print "</form>\n";
+    }
 ?>
 
 </body>
