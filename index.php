@@ -23,7 +23,8 @@
         print "</form>\n";
 
     }else{
-        print $syouhin . "<br><br>";
+        print $syouhin . "<br>";
+        print $kakaku . "<br><br>";
         print "登録しますか？<br>\n";
         print "<form method=\"post\">\n";
         print "<input type=\"submit\" name=\"status\" value=\"はい\">\n";
