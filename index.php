@@ -29,6 +29,7 @@
         print "<form method=\"post\">\n";
         print "<input type=\"radio\" name=\"userchoice\" value=\"はい\">はい<br>\n";
         print "<input type=\"radio\" name=\"userchoice\" value=\"いいえ\">いいえ<br>\n";
+        print "<input type=\"submit\" name=\"status\" value=\"送信\">\n";
         print "</form>\n";
     }
 ?>
