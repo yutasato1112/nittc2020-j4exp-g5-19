@@ -12,7 +12,7 @@
 <body>
 
 <?php
-    if ($firsttime == 0) {
+    if ($firsttime == 1) {
         print "商品名を入力<br>\n";
         print "<form method=\"post\">\n";
         print "<input type=\"text\" size=\"30\" name=\"syouhinmei\"><br>\n";
@@ -26,7 +26,7 @@
         print $syouhin . "<br><br>";
         print "登録しますか？<br>\n";
         print "<form method=\"post\">\n";
-        print "<input type=\"submit\" name=\"status\" value=\"もう一度\">\n";
+        print "<input type=\"submit\" name=\"status\" value=\"はい\">\n";
         print "</form>\n";
     }
 ?>
