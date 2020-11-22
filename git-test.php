@@ -1,2 +1,2 @@
 <?php
-    print 'こんにちは'
+    print 'おはよう'
