@@ -2,7 +2,7 @@
     if(isset($_POST['syouhinmei']) == true){
       $syouhin = htmlspecialchars($_POST['syouhinmei'], ENT_QUOTES);
       $kakaku = htmlspecialchars($_POST['price'], ENT_QUOTES);
-      pageB();
+      pageC();
       pageB_check();
     }else{
       pageA();
@@ -14,9 +14,9 @@
     function pageA_check(){
       $check_text = $_GET['syouhinmei'];
       $check_num = $_GET['price'];
-      //if($check_num < 0){
+      if($check_num < 0){
         pageC();
-      //}
+      }
     }
 
     function pageB_check(){
