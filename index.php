@@ -1,8 +1,9 @@
 <?php
+    pageD();
     if(isset($_POST['syouhinmei']) == true){
       $syouhin = htmlspecialchars($_POST['syouhinmei'], ENT_QUOTES);
       $kakaku = htmlspecialchars($_POST['price'], ENT_QUOTES);
-      pageC();
+      pageB();
       pageB_check();
     }else{
       pageA();
@@ -12,11 +13,7 @@
     }
 
     function pageA_check(){
-      $check_text = $_GET['syouhinmei'];
-      $check_num = $_GET['price'];
-      if($check_num < 0){
-        pageC();
-      }
+      
     }
 
     function pageB_check(){
@@ -62,7 +59,19 @@
     }
 
     function pageD(){
-
+        print "検索条件<br>\n";
+        print "商品名検索<br>\n";
+        print "<form method=\"post\">\n";
+        print "<input type=\"text\" size=\"30\" name=\"kensakumei\"><br>\n";
+        print "<input type=\"submit\" name=\"statusD_syouhin\" value=\"送信\">\n";
+        print "</form>\n\n";
+        print "価格検索<br?\n";
+        print "<form method=\"post\">\n";
+        print "<input type=\"text\" size=\"30\" name=\"low_price\">";
+        print "  〜  ";
+        print "<input type=\"text\" size=\"30\" name=\"high_price\">";
+        print "<input type=\"submit\" name=\"statusD_price\" value=\"送信\">\n";
+        print "</form>\n\n";
     }
 
     function pageE(){
