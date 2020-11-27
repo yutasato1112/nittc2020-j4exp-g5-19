@@ -6,7 +6,9 @@
       pageB_check();
     }else{
       pageA();
-      pageA_check();
+      if($_GET['statusA'] == "送信"){
+        pageA_check();
+      }
     }
 
     function pageA_check(){
@@ -37,7 +39,7 @@
         print "価格を入力<br>\n";
         print "<form method=\"post\">\n";
         print "<input type=\"text\" size=\"30\" name=\"price\"><br>\n";
-        print "<input type=\"submit\" name=\"status\" value=\"送信\">\n";
+        print "<input type=\"submit\" name=\"statusA\" value=\"送信\">\n";
         print "</form>\n";
     }
 
@@ -48,7 +50,7 @@
         print "<form method=\"post\">\n";
         print "<input type=\"radio\" name=\"userchoice\" value=\"はい\">はい<br>\n";
         print "<input type=\"radio\" name=\"userchoice\" value=\"いいえ\">いいえ<br>\n";
-        print "<input type=\"submit\" name=\"status\" value=\"送信\">\n";
+        print "<input type=\"submit\" name=\"statusB\" value=\"送信\">\n";
         print "</form>\n";
     }
 
@@ -56,7 +58,7 @@
         print "error<br>\n";
         print "<form method=\"post\">\n";
         print "<input type=\"text\" size=\"30\" name=\"price\"><br>\n";
-        print "<input type=\"submit\" name=\"status\" value=\"送信\">\n";
+        print "<input type=\"submit\" name=\"statusC\" value=\"送信\">\n";
         print "</form>\n";
     }
 
