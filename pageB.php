@@ -13,5 +13,9 @@
 </html>
 </body>
 <?php
-    
+    if($_POST['youserchoice'] == "いいえ"){
+        header('Location:pageA.php');
+    }else{
+        
+    }
 ?>
