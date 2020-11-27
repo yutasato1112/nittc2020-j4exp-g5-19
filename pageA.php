@@ -19,7 +19,7 @@
         if(is_int($_POST["price"]) && $_POST["price"] > 0){
             header('Location:pageB.php');
         }else{
-            header('Location:pageC.php');
+            header('Location:pageB.php');
         }
     }
 ?>
