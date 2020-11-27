@@ -57,7 +57,6 @@
     function pageC(){
         print "error<br>\n";
         print "<form method=\"post\">\n";
-        print "<input type=\"text\" size=\"30\" name=\"price\"><br>\n";
         print "<input type=\"submit\" name=\"statusC\" value=\"送信\">\n";
         print "</form>\n";
     }
