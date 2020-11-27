@@ -13,9 +13,11 @@
 </html>
 </body>
 <?php
-    if($_POST['youserchoice'] == "yes"){
-        
-    }else{
-        header('Location:pageA.php');
+    if(isset($_POST["statusB"])){
+        if($_POST['youserchoice'] == "yes"){
+            
+        }else{
+            header('Location:pageA.php');
+        }
     }
 ?> 
