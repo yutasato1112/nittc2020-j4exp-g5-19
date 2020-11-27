@@ -2,7 +2,7 @@
     if(isset($_POST['syouhinmei']) == true){
       $syouhin = htmlspecialchars($_POST['syouhinmei'], ENT_QUOTES);
       $kakaku = htmlspecialchars($_POST['price'], ENT_QUOTES);
-      pageB();
+      pageC();
       pageB_check();
     }else{
       pageA();
