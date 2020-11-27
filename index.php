@@ -3,8 +3,10 @@
       $syouhin = htmlspecialchars($_POST['syouhinmei'], ENT_QUOTES);
       $kakaku = htmlspecialchars($_POST['price'], ENT_QUOTES);
       pageB();
+      pageB_check();
     }else{
       pageA();
+      pageA_check();
     }
 
     function pageA_check(){
@@ -37,8 +39,6 @@
         print "<input type=\"text\" size=\"30\" name=\"price\"><br>\n";
         print "<input type=\"submit\" name=\"status\" value=\"送信\">\n";
         print "</form>\n";
-        pageA_check();
-
     }
 
     function pageB(){
@@ -50,7 +50,6 @@
         print "<input type=\"radio\" name=\"userchoice\" value=\"いいえ\">いいえ<br>\n";
         print "<input type=\"submit\" name=\"status\" value=\"送信\">\n";
         print "</form>\n";
-        pageB_check();
     }
 
     function pageC(){
