@@ -1,6 +1,5 @@
 <?php
-    header('pageD.php');
+    header('Location:pageD.php');
     if($_POST['statusA']){
-      pageA();
     }
 ?>
