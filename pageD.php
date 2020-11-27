@@ -15,7 +15,7 @@
     print "<input type=\"submit\" name=\"statusD_price\" value=\"送信\"><br><br><br>\n\n\n";
     print "</form>\n";
     print "<form method=\"post\">\n";
-    print "<input type=\"submit\" name=\"statusA\" value=\"商品登録ページへ\">\n";
+    print "<input type=\"submit\" name=\"statusDtoA\" value=\"商品登録ページへ\">\n";
     print "</form>\n";
 ?>
 </html>
