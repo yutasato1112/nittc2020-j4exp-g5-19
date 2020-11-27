@@ -8,15 +8,19 @@
     }
 
     function pageA_check(){
-
+      $check_text = $_GET['syouhinmei'];
+      $check_num = $_GET['price'];
+      if($check_num < 0){
+        pageC();
+      }
     }
 
     function pageB_check(){
         $YesorNo = $_GET['userchoice'];
         if($YesorNo == "はい"){
-          print "はい";
+
         }else{
-          print "いいえ";
+
         }
     }
 ?>
@@ -33,6 +37,7 @@
         print "<input type=\"text\" size=\"30\" name=\"price\"><br>\n";
         print "<input type=\"submit\" name=\"status\" value=\"送信\">\n";
         print "</form>\n";
+        pageA_check();
 
     }
 
