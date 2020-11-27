@@ -16,7 +16,7 @@
 <?php
     $kakaku = $_POST['price'];
     if(isset($_POST["statusA"]) ){
-        if(is_int($kakaku)){
+        if($kakaku < 0){
             header('Location:pageB.php');
         }else{
             header('Location:pageC.php');
