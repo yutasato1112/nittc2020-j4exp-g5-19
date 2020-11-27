@@ -28,7 +28,7 @@
 
     }
 
-    function pageB{
+    function pageB())
         print $syouhin . "<br>";
         print $kakaku . "<br><br>";
         print "登録しますか？<br>\n";
