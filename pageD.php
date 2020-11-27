@@ -20,3 +20,7 @@
 ?>
 </html>
 </body>
+<?php
+    if( isset($_POST["statusDtoA"]) ){
+        header('Location:pageA')
+    }
