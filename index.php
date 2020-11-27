@@ -1,7 +1,7 @@
 <?php
     pageD();
     if($_POST['statusA']){
-      echo 'ボタンが押されました！';
+      pageA();
     }
 ?>
 <html>
