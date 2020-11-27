@@ -33,6 +33,22 @@
         print "<input type=\"submit\" name=\"status\" value=\"送信\">\n";
         print "</form>\n";
     }
+
+    function pageC(){
+        print "error<br>\n"
+        print "<form method=\"post\">\n";
+        print "<input type=\"text\" size=\"30\" name=\"price\"><br>\n";
+        print "<input type=\"submit\" name=\"status\" value=\"送信\">\n";
+        print "</form>\n";
+    }
+
+    function pageD(){
+
+    }
+
+    function pageE(){
+
+    }
 ?>
 
 </body>
