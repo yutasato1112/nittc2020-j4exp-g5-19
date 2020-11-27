@@ -13,7 +13,7 @@
 <?php
     if(isset($_POST["yes"]) ){
         header('');
-    }else{
+    }elseif(isset($_POST["no"])){
         header('Location:pageA.php');
     }
 ?> 
