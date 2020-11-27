@@ -1,0 +1,14 @@
+<html>
+<body>
+<?php
+    print "商品名を入力<br>\n";
+    print "<form method=\"post\">\n";
+    print "<input type=\"text\" size=\"30\" name=\"syouhinmei\"><br>\n";
+    print "価格を入力<br>\n";
+    print "<form method=\"post\">\n";
+    print "<input type=\"text\" size=\"30\" name=\"price\"><br>\n";
+    print "<input type=\"submit\" name=\"statusA\" value=\"送信\">\n";
+    print "</form>\n";
+?>
+</html>
+</body>
