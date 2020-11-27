@@ -15,9 +15,22 @@
 <?php
     if(isset($_POST["statusB"])){
         if($_POST['youserchoice'] == "yes"){
-            
+            $conn = "host=localhost dbname=uriage user=pguser password=pguser";
+            $link = pg_connect($conn);
+            if (!$link) {
+               die('接続失敗です。'.pg_last_error());
+            }
+
+            print('接続に成功しました。<br>');$conn = "host=localhost dbname=uriage user=pguser password=pguser";
+            $link = pg_connect($conn);
+            if (!$link) {
+                die('接続失敗です。'.pg_last_error());
+            }
+
+            print('接続に成功しました。<br>');
+            header('Location:pageA.php');
         }else{
             header('Location:pageA.php');
-        }
+       }
     }
 ?> 
