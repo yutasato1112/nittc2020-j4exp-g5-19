@@ -6,9 +6,9 @@
     }else{
       $firsttime = 1;
     }
-    if($firsttime == 0){
+    if($firsttime == 1){
       pageA();
-    }if($firsttime == 1){
+    }if($firsttime == 0){
       pageB();
     }
 ?>
