@@ -12,3 +12,12 @@
 ?>
 </html>
 </body>
+
+<?php
+    $kakaku = $_POST['price'];
+    if(is_int($kakaku) && $kakaku > 0){
+        header('Location:pageB.php');
+    }else{
+        header('Location:pageC.php');
+    }
+?>
