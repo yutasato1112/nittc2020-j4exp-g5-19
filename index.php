@@ -5,5 +5,4 @@
     include('pageD');
     include('pageA\E');
     header('Location:pageD.php');
-    }
 ?>
