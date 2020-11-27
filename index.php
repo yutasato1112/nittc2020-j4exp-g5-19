@@ -12,9 +12,9 @@
     function pageA_check(){
       $check_text = $_GET['syouhinmei'];
       $check_num = $_GET['price'];
-      if($check_num < 0){
+      //if($check_num < 0){
         pageC();
-      }
+      //}
     }
 
     function pageB_check(){
