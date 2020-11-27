@@ -16,7 +16,7 @@
 
 <?php
     if(isset($_POST["statusA"]) ){
-        if(is_int($_POST["price"]) && $_POST["price"] > 0){
+        if($_POST["price"] > 0){
             header('Location:pageB.php');
         }else{
             header('Location:pageC.php');
