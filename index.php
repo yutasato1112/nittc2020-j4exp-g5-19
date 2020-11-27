@@ -6,6 +6,19 @@
     }else{
       pageA();
     }
+
+    function pageA_check(){
+
+    }
+
+    function pageB_check(){
+        $YesorNo = $_GET['userchoice'];
+        if($YesorNo == "はい"){
+          print "はい";
+        }else{
+          print "いいえ";
+        }
+    }
 ?>
 <html>
 <body>
@@ -32,6 +45,7 @@
         print "<input type=\"radio\" name=\"userchoice\" value=\"いいえ\">いいえ<br>\n";
         print "<input type=\"submit\" name=\"status\" value=\"送信\">\n";
         print "</form>\n";
+        function pageB_check();
     }
 
     function pageC(){
