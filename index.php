@@ -2,7 +2,7 @@
     if(isset($_POST['syouhinmei']) == true){
       $syouhin = htmlspecialchars($_POST['syouhinmei'], ENT_QUOTES);
       $kakaku = htmlspecialchars($_POST['price'], ENT_QUOTES);
-      pageC();
+      pageB();
       pageB_check();
     }else{
       pageA();
@@ -57,7 +57,7 @@
     function pageC(){
         print "error<br>\n";
         print "<form method=\"post\">\n";
-        print "<input type=\"submit\" name=\"statusC\" value=\"送信\">\n";
+        print "<input type=\"submit\" name=\"statusC\" value=\"OK\">\n";
         print "</form>\n";
     }
 
