@@ -4,18 +4,16 @@
     print $syouhin . "<br>";
     print $kakaku . "<br><br>";
     print "登録しますか？<br>\n";
-    print "<form method=\"post\">\n";
-    print "<input type=\"radio\" name=\"userchoice\" value=\"はい\">はい<br>\n";
-    print "<input type=\"radio\" name=\"userchoice\" value=\"いいえ\">いいえ<br>\n";
-    print "<input type=\"submit\" name=\"statusB\" value=\"送信\">\n";
+    print "<input type=\"submit\" name=\"yes\" value=\"はい\">";
+    print "<input type=\"submit\" name=\"no\" value=\"いいえ\">\n";
     print "</form>\n";
 ?>
 </html>
 </body>
 <?php
-    if($_POST['youserchoice'] == "いいえ"){
-        header('Location:pageA.php');
+    if(isset($_POST["yes"]) ){
+        header('');
     }else{
-        
+        header('Location:pageA.php');
     }
-?>
+?> 
