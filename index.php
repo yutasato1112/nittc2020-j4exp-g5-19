@@ -71,7 +71,7 @@
         print "<input type=\"text\" size=\"30\" name=\"low_price\">";
         print "  〜  ";
         print "<input type=\"text\" size=\"30\" name=\"low_price\"><br>\n";
-        print "<input type=\"submit\" name=\"statusD_price\" value=\"送信\">\n";
+        print "<input type=\"submit\" name=\"statusD_price\" value=\"送信\"><br>\n";
         print "</form>\n\n";
     }
 
