@@ -22,5 +22,5 @@
 </body>
 <?php
     if( isset($_POST["statusDtoA"]) ){
-        header('Location:pageA')
+        header('Location:pageA');
     }
