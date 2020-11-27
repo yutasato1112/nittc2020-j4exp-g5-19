@@ -8,3 +8,8 @@
 ?>
 </html>
 </body>
+<?php
+    if(isset($_POST["statusC"]) ){
+        header('Location:pageA.php');
+    }
+?>
