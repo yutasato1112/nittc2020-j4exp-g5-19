@@ -7,8 +7,8 @@ try {
     $password = jsavftjpgmyakf;
     $dbh = new PDO($dsn, $user, $password);
     db_access($dbh);
+    echo "接続成功: ";
     getMessage() . "\n";
-    echo "接続: ";
     } catch (PDOException $e) {
     echo "申し訳ございません。接続失敗: " . $e-
     exit();
