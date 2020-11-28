@@ -8,6 +8,8 @@
         ?><?=row["item"]?> : <?=row["price"]?><br>
         <?php
     }
+    $stmt = $connect->prepare("SELECT * FROM order WHERE age >= :age");
+    print "$stmt"
 ?>
 </html>
 </body>
