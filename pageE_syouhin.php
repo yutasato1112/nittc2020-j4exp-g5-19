@@ -6,6 +6,7 @@
     $result = $connect->query("SELECT * FROM order");
     foreach($results as $row) {
         ?><?=row["item"]?> : <?=row["price"]?><br>
+        <?php
     }
 ?>
 </html>
