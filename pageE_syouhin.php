@@ -23,6 +23,9 @@
             print '<td>'.$row['価格']."</td>";  
             print '<td>'.$row['登録日']."</td>";    
             print "</tr>\n";             // 表の明細行の終わり
+
+
+
         endforeach; 
             print "</table>\n";             // 表の終わり 
 
