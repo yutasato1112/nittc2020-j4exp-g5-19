@@ -12,8 +12,8 @@
     $connect = new PDO("pgsql:host=ec2-52-206-15-227.compute-1.amazonaws.com;dbname=order;port=5432;user=jsavftjpgmyakf;password=aa711d82b8c4c7118a5c45c5c6cbfdb66b7a2ff2a3443de400e1532ecc29371b");
     
     $result = $connect->query("SELECT * FROM order");
-
-    foreach($result as $row):    
+    $rs = $result->fetchall(); 
+    foreach($rs as $row):    
         print "<tr>";              // 表の明細行の始まり    
         print '<td>'.$row['商品名']."</td>";    
         print '<td>'.$row['価格']."</td>";  
