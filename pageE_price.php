@@ -8,8 +8,9 @@
         $dbh = new PDO($dsn, $user, $password);
         echo "接続成功";
         $result = $connect->query("SELECT * FROM order");
-        $rs = $result->fetchall(); 
-        var_dump($rs);
+        $rs[] = $result->fetchall(); 
+        print_r($rs);
+        
 
     } catch (PDOException $e) {
         echo "接続失敗: " . $e-
