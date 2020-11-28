@@ -8,8 +8,8 @@
         ?><?=row["item"]?> : <?=row["price"]?><br>
         <?php
     }
-    $stmt = $connect->prepare("SELECT * FROM order");
-    print "$stmt"
+
+    print "<table border=1 cellspacing=1 cellpadding=1>\n"; 
 ?>
 </html>
 </body>
