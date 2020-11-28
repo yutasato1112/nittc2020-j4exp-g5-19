@@ -7,7 +7,7 @@
     try {
         $dbh = new PDO($dsn, $user, $password);
         echo "接続成功";
-        $result = $dsn->query("SELECT * FROM order");
+        $result = $dbh->query("SELECT * FROM order");
         $rs = $result->fetchall(); 
         echo"$rs[1][1]";
         
