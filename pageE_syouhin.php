@@ -8,7 +8,7 @@
         ?><?=row["item"]?> : <?=row["price"]?><br>
         <?php
     }
-    $stmt = $connect->prepare("SELECT * FROM order WHERE age >= :age");
+    $stmt = $connect->prepare("SELECT * FROM order");
     print "$stmt"
 ?>
 </html>
