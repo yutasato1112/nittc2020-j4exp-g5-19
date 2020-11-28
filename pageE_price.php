@@ -9,7 +9,7 @@
         echo "接続成功";
         $result = $connect->query("SELECT * FROM order");
         $rs = $result->fetchall(); 
-        print "$rs";
+        print "$rs[1][1]";
 
     } catch (PDOException $e) {
         echo "接続失敗: " . $e-
