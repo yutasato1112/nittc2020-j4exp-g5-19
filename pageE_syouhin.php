@@ -21,9 +21,9 @@
         $rs[][] = $sth->fetchAll();
         //データが取得されたかどうかの確認
         if(empty($rs[0][0])){
-            echo '取得できました';
+            echo '取得できません';
         }else{
-            echo '取得できませんでした';
+            echo '取得できました';
         }
         foreach($rs as $row):    
             print "<tr>";              // 表の明細行の始まり    
