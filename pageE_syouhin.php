@@ -15,7 +15,6 @@ try{
     print "<th>価格</th>";  // 表の見出し     
     print "<th>登録日</th>";  // 表の見出し  
     print "</tr>";             // 表の見出し行の終わり
-    print "件数は".$result->rowCount()."件です";
 
     // データベース検索結果を 1 行ずつ取り出して連想配列へ格納，HTML 表として出力 
     $rs = $result->fetchall(); 
