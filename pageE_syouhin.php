@@ -16,8 +16,7 @@
         $dbh = new PDO($dsn, $user, $password);
         echo "接続成功";
         $result = $dbh->query("SELECT * FROM order");
-        //$rs = $result->fetchall(); 
-        $rs = [["商品名","価格","登録日"],["a","b","c"],["d","e","f"],["g","h","i"] ];
+        $rs = $result->fetchall(); 
         foreach($rs as $row):    
             print "<tr>";              // 表の明細行の始まり    
             print '<td>'.$row['商品名']."</td>";    
