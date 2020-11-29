@@ -16,7 +16,8 @@
         $dbh = new PDO($dsn, $user, $password);
         echo "接続成功";
         $result = $dbh->query("SELECT * FROM order");
-        $rs = $result->fetchall(); 
+        //$rs = $result->fetchall(); 
+        $rs = [["商品名","価格","登録日"],["a","b","c"],["d","e","f"],["g","h","i"] ];
         foreach($rs as $row):    
             print "<tr>";              // 表の明細行の始まり    
             print '<td>'.$row['商品名']."</td>";    
@@ -27,7 +28,7 @@
         print "</table>\n";             // 表の終わり 
         
         // データベース検索結果を 1 行ずつ取り出して普通の配列へ格納，HTML 表として出力   
-        while(($row = pg_fetch_array($result))):      
+        while(($row = pg_fetch_array($rs))):      
             print "<tr>";              // 表の明細行の始まり       
             print '<td>'.$row[0]."</td>";       
             print '<td>'.$row[1]."</td>";       
