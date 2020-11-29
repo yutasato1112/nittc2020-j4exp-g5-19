@@ -13,14 +13,11 @@ try{
 
     $connect = new
     PDO("pgsql:host=ec2-52-206-15-227.compute-1.amazonaws.com;dbname=d90s2fmuo5249c;port=5432;user=jsavftjpgmyakf;password=aa711d82b8c4c7118a5c45c5c6cbfdb66b7a2ff2a3443de400e1532ecc29371b");
-    /*session_start();
+    session_start();
     $High_Price = $_SESSION['High_Price'];
     session_start();
     $Low_Price = $_SESSION['Low_Price'];
-    */
-    $Low_Price = 10000;
-    $High_Price = 200000;
-    $sql = "SELECT * FROM gadget WHERE 価格 BETWEEN '$Low_Price' AND '$High_Price' ORDER BY 登録日 DESK";
+    $sql = "SELECT * FROM gadget /*WHERE 価格 BETWEEN '$Low_Price' AND '$High_Price' ORDER BY 登録日 DESK*/";
     $result = $connect->query($sql);
     
     print "<h3>デーベース検索結果</h3>\n"; // 表の開始(HTML タグ)
