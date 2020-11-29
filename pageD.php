@@ -25,9 +25,9 @@
 </html>
 </body>
 <?php
-    $syouhin_name = $_POST["kensakumei"];
-    $Low_Price = $_POST["low_price"];
-    $High_Price = $_POST["high_price"];
+    $_SESSION['syouhin_name']= $_POST["kensakumei"];
+    $_SESSION['Low_Price'] = $_POST["low_price"];
+    $_SESSION['High_Price'] = $_POST["high_price"];
 
 
     if( isset($_POST["statusDtoA"]) ){
