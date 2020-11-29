@@ -15,8 +15,10 @@
     try {
         $dbh = new PDO($dsn, $user, $password);
         echo "接続成功";
-        $result = $dbh->query("SELECT * FROM order");
-        $rs = $result->fetchall(); 
+        $sql = 'SELECT * FROM order;';
+        $sth = $dbh->prepare($sql);
+        $sth->execute();
+        $rs[][] = $sth->fetchAll();
         //データが取得されたかどうかの確認
         if(empty($rs[0][0])){
             echo '取得できました';
