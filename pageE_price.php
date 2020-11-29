@@ -6,6 +6,7 @@
     $password = 'aa711d82b8c4c7118a5c45c5c6cbfdb66b7a2ff2a3443de400e1532ecc29371b';
     try {
         $dbh = new PDO($dsn, $user, $password);
+        
         echo "接続成功";
         $result = $dbh->query("SELECT * FROM order");
         $rs = $result->fetchall(); 
