@@ -9,9 +9,11 @@
         echo "接続成功";
         $result = $dbh->query("SELECT * FROM order");
         $rs = $result->fetchall(); 
-        $a[1][1] = 3;
-        echo"$a[1][1]";
-        
+
+        $a = array('key1' => 'hoge1',
+                    'key2' => 'hoge2');
+        var_export($a);
+        var_export($rs);
 
     } catch (PDOException $e) {
         echo "接続失敗: " . $e-
