@@ -25,6 +25,7 @@
 </html>
 </body>
 <?php
+    session_start();
     $_SESSION['syouhin_name']= $_POST["kensakumei"];
     $_SESSION['Low_Price'] = $_POST["low_price"];
     $_SESSION['High_Price'] = $_POST["high_price"];
