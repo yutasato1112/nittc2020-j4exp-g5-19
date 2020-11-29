@@ -11,7 +11,7 @@ function get_str_var_dump($var){
     return $bar;
 }
 
- $a = array(1, 2, array("a", "b", "c"));
+
 
  // 配列$aをget_str_var_dump()で文字列に変換してからerorr_log()に渡す
  error_log('$a:' . get_str_var_dump($a));

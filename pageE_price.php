@@ -9,15 +9,21 @@
         echo "接続成功";
         $result = $dbh->query("SELECT * FROM order");
         $rs = $result->fetchall(); 
-
-        $a = array('key1' => 'hoge1',
-                    'key2' => 'hoge2');
-        var_export($a);
-        var_export($rs);
+        error_log('$rs:' . get_str_var_dump($rs));
+        
 
     } catch (PDOException $e) {
         echo "接続失敗: " . $e-
     exit();
+    }
+
+
+    function get_str_var_dump($var){
+        ob_start(); // バッファリングON
+        var_dump($var);
+        $bar = ob_get_contents(); // バッファの内容を変数に格納
+        ob_end_clean(); // バッファを消去してバッファリングOFF
+        return $bar;
     }
 ?>
 </html>
