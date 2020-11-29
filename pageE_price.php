@@ -1,14 +1,26 @@
+<?php
+    if(isset($_POST["statusE_pricetoD"]) ){
+        header('Location:pageD.php');
+    }
+?>
 <html>
 <body>
 <?php
 try{
-    print "接続完了";
+    print "<form method=\"post\">\n";
+    print "<input type=\"submit\" name=\"statusE_pricetoD\" value=\"検索ページへ\">\n";
+    print "</form>\n";
+
     $connect = new
     PDO("pgsql:host=ec2-52-206-15-227.compute-1.amazonaws.com;dbname=d90s2fmuo5249c;port=5432;user=jsavftjpgmyakf;password=aa711d82b8c4c7118a5c45c5c6cbfdb66b7a2ff2a3443de400e1532ecc29371b");
-    $sql = "SELECT * FROM gadget";
+    
+    $sql = "SELECT * FROM gadget WHERE 価格 BETWEEN '$Low_Price' AND '$High_Price ORDER BY 登録日 DESC";
     $result = $connect->query($sql);
     
     print "<h3>デーベース検索結果</h3>\n"; // 表の開始(HTML タグ)
+    // データベース検索結果の件数を出力   
+    print "件数は".$stmt->rowCount()."です";
+    
     print "<table border=1 cellspacing=1 cellpadding=1>\n"; // 表の開始(HTML タグ)  
     print "<tr>";              // 表の見出し行の始まり  
     print "<th>商品名</th>";   // 表の見出し    
@@ -35,3 +47,6 @@ exit();
 ?>
 </html>
 <body>
+<?php
+    include('pageD.php');
+?>
