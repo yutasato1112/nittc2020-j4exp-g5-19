@@ -2,6 +2,7 @@
 <body>
 <?php
 try{
+    print $syouhin_name;
     print "<form method=\"post\">\n";
     print "<input type=\"submit\" name=\"statusE_syouhintoD\" value=\"検索ページへ\">\n";
     print "</form>\n";
