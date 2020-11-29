@@ -17,6 +17,8 @@
 <?php
     if(isset($_POST["statusA"]) ){
         if($_POST["price"] >= 0){
+            $syouhinmei = $_POST['syouhinmei'];
+            $price = $_POST['price'];
             header('Location:pageB.php');
         }else{
             header('Location:pageC.php');
