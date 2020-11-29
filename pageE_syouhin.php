@@ -7,6 +7,7 @@
 <body>
 <?php
 try{
+    $syouhin_name = "Dell";
     print "<form method=\"post\">\n";
     print "<input type=\"submit\" name=\"statusE_syouhintoD\" value=\"検索ページへ\">\n";
     print "</form>\n";
@@ -16,8 +17,6 @@ try{
     
     $sql = "SELECT * FROM gadget WHERE 商品名 like '%$syouhin_name%' ORDER BY 登録日 DESC";
     $result = $connect->query($sql);
-    // データベース検索結果の件数を出力   
-    print "件数は".$stmt->rowCount()."です";
     
     print "<h3>デーベース検索結果</h3>\n"; // 表の開始(HTML タグ)
     print "<table border=1 cellspacing=1 cellpadding=1>\n"; // 表の開始(HTML タグ)  
