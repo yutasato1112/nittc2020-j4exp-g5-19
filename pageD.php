@@ -15,6 +15,8 @@
     print "  〜  ";
     print "<form method=\"post\">";
     print "<input type=\"text\" size=\"30\" name=\"high_price\"><br>\n";
+    print "</form>";
+    print "<form method=\"post\">";
     print "<input type=\"submit\" name=\"statusD_price\" value=\"送信\"><br><br><br>\n\n\n";
     print "</form>\n";
 
