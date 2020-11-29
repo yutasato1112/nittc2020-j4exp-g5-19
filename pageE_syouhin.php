@@ -1,7 +1,7 @@
 <?php
-    include('pageD.php');
+    require('pageD.php');
     if(isset($_POST["statusE_syouhintoD"]) ){
-        header('Location:pageA.php');
+        header('Location:pageD.php');
     }
 ?>
 <html>
