@@ -18,7 +18,7 @@
         print "<th>登録日</th>";  // 表の見出し 登録日  
         print "</tr>"; 
 
-        $rs = $result->fetchall; 
+        $rs = $result->fetchall(); 
         
         foreach($rs as $row):    
             print "<tr>";              // 表の明細行の始まり    
