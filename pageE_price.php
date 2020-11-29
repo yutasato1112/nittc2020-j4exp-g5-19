@@ -17,9 +17,11 @@ try{
     $High_Price = $_SESSION['High_Price'];
     session_start();
     $Low_Price = $_SESSION['Low_Price'];
-    $sql = "SELECT * FROM gadget WHERE 価格 BETWEEN '$High_Price' AND '$Low_Price' ORDER BY 登録日 DESC";
+    $sql = "SELECT * FROM gadget WHERE 価格 BETWEEN '$Low_Price' AND '$High_Price' ORDER BY 登録日 DESC";
     $result = $connect->query($sql);
     
+    print $High_Price;
+    print $Low_Price;
     print "<h3>デーベース検索結果</h3>\n"; // 表の開始(HTML タグ)
     print "<table border=1 cellspacing=1 cellpadding=1>\n"; // 表の開始(HTML タグ)  
     print "<tr>";              // 表の見出し行の始まり  
