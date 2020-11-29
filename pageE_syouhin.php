@@ -18,14 +18,13 @@
         $result = $dbh->query("SELECT * FROM order");
         $rs = $result->fetchall(); 
         
-        // データベース検索結果を 1 行ずつ取り出して普通の配列へ格納，HTML 表として出力   
-        while(($row = pg_fetch_array($result))):      
-            print "<tr>";              // 表の明細行の始まり       
-            print '<td>'.$row[0]."</td>";       
-            print '<td>'.$row[1]."</td>";       
-            print '<td>'.$row[2]."</td>";      
+        foreach($rs as $row):    
+            print "<tr>";              // 表の明細行の始まり    
+            print '<td>'.$row['商品名']."</td>";    
+            print '<td>'.$row['価格']."</td>"; 
+            print '<td>'.$row['登録日']."</td>";    
             print "</tr>\n";             // 表の明細行の終わり
-        endwhile; 
+        endforeach; print "</table>\n";             // 表の終わり 
 
     } catch (PDOException $e) {
         echo "接続失敗: " . $e-
