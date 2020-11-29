@@ -2,8 +2,10 @@
 <body>
 <?php
 try{
-    print "接続完了";
-    echo "$syouhin_name";
+    print "<form method=\"post\">\n";
+    print "<input type=\"submit\" name=\"statusE_syouhintoD\" value=\"検索ページへ\">\n";
+    print "</form>\n";
+
     $connect = new
     PDO("pgsql:host=ec2-52-206-15-227.compute-1.amazonaws.com;dbname=d90s2fmuo5249c;port=5432;user=jsavftjpgmyakf;password=aa711d82b8c4c7118a5c45c5c6cbfdb66b7a2ff2a3443de400e1532ecc29371b");
     
@@ -37,3 +39,7 @@ exit();
 ?>
 </html>
 <body>
+<?php
+    if(isset($_POST["statusE_syouhintoD"])){
+        header('Location:pageD.php');
+    }
