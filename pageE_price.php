@@ -9,7 +9,8 @@
         echo "接続成功";
         $result = $dbh->query("SELECT * FROM order");
         $rs = $result->fetchall(); 
-        echo"$rs[1][1]";
+        $a[1][1] = 3;
+        echo"$a[1][1]";
         
 
     } catch (PDOException $e) {
