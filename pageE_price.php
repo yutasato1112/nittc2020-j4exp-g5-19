@@ -10,6 +10,12 @@
         $result = $dbh->query("SELECT * FROM order");
         $rs = $result->fetchall(); 
         error_log('$rs:' . get_str_var_dump($rs));
+
+        if($rs == NULL){
+            print "no";
+        }else{
+            print "good";
+        }
         
 
     } catch (PDOException $e) {
