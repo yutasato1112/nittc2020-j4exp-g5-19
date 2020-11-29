@@ -45,6 +45,3 @@ exit();
 ?>
 </html>
 <body>
-<?php
-    include('pageD.php');
-?>
