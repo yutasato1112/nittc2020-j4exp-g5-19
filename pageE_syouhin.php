@@ -1,5 +1,4 @@
 <?php
-    require('pageD.php');
     if(isset($_POST["statusE_syouhintoD"]) ){
         header('Location:pageD.php');
     }
@@ -45,3 +44,6 @@ exit();
 ?>
 </html>
 <body>
+<?php
+    include('pageD.php');
+?>
