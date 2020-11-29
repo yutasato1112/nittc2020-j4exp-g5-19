@@ -7,7 +7,7 @@
 <body>
 <?php
 try{
-    $syouhin_name = "HP";
+    $syouhin_name = "Core";
     print "<form method=\"post\">\n";
     print "<input type=\"submit\" name=\"statusE_syouhintoD\" value=\"検索ページへ\">\n";
     print "</form>\n";
