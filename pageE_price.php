@@ -1,5 +1,5 @@
 <?php
-    if(isset($_POST["statusE_pricetoD"]) ){
+    if(isset($_POST["statusE_syouhintoD"]) ){
         header('Location:pageD.php');
     }
 ?>
@@ -8,15 +8,15 @@
 <?php
 try{
     print "<form method=\"post\">\n";
-    print "<input type=\"submit\" name=\"statusE_pricetoD\" value=\"検索ページへ\">\n";
+    print "<input type=\"submit\" name=\"statusE_syouhintoD\" value=\"検索ページへ\">\n";
     print "</form>\n";
 
     $connect = new
     PDO("pgsql:host=ec2-52-206-15-227.compute-1.amazonaws.com;dbname=d90s2fmuo5249c;port=5432;user=jsavftjpgmyakf;password=aa711d82b8c4c7118a5c45c5c6cbfdb66b7a2ff2a3443de400e1532ecc29371b");
     session_start();
-    $Low＿Price = $_SESSION['Low_Price'];
     $High_Price = $_SESSION['High_Price'];
-    $sql = "SELECT * FROM gadget WHERE 価格 BETWEEN '$Low_Price' AND '$High_Price ORDER BY 登録日 DESC";
+    $Low_Price = $_SESSION['Low_Price'];
+    $sql = "SELECT * FROM gadget WHERE 価格 BETWEEN '$Low_Price' AND '$High_Price' ORDER BY 登録日 DESK";
     $result = $connect->query($sql);
     
     print "<h3>デーベース検索結果</h3>\n"; // 表の開始(HTML タグ)
@@ -46,6 +46,3 @@ exit();
 ?>
 </html>
 <body>
-<?php
-    include('pageD.php');
-?>
