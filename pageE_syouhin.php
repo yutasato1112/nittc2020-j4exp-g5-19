@@ -17,6 +17,12 @@
         echo "接続成功";
         $result = $dbh->query("SELECT * FROM order");
         $rs = $result->fetchall(); 
+        //データが取得されたかどうかの確認
+        if(empty($rs[0][0])){
+            echo '取得できました';
+        }else{
+            echo '取得できませんでした';
+        }
         foreach($rs as $row):    
             print "<tr>";              // 表の明細行の始まり    
             print '<td>'.$row['商品名']."</td>";    
