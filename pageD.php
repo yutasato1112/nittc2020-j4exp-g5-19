@@ -11,7 +11,7 @@
     print "価格検索<br?\n";
     print "<form method=\"post\">\n";
     print "<input type=\"text\" size=\"30\" name=\"low_price\">";
-    print "</form>\n";
+    print "</form>";
     print "  〜  ";
     print "<form method=\"post\">\n";
     print "<input type=\"text\" size=\"30\" name=\"low_price\"><br>\n";
