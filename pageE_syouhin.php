@@ -1,8 +1,13 @@
+<?php
+    include('pageD.php');
+    if(isset($_POST["statusE_syouhintoD"]) ){
+        header('Location:pageA.php');
+    }
+?>
 <html>
 <body>
 <?php
 try{
-    print $syouhin_name;
     print "<form method=\"post\">\n";
     print "<input type=\"submit\" name=\"statusE_syouhintoD\" value=\"検索ページへ\">\n";
     print "</form>\n";
@@ -40,8 +45,3 @@ exit();
 ?>
 </html>
 <body>
-<?php
-    require('pageD.php');
-    if(isset($_POST["statusC"]) ){
-        header('Location:pageA.php');
-    }
