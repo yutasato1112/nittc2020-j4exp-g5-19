@@ -32,7 +32,8 @@
         print '<td>'.$row[2]."</td>";    
         print "</tr>\n";             // 表の明細行の終わり
     endforeach; print "</table>\n";             // 表の終わり 
-
+    var_dump($result);
+    var_dump($rs);
 
 
     
