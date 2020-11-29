@@ -15,25 +15,14 @@
     try {
         $dbh = new PDO($dsn, $user, $password);
         echo "接続成功";
-        $sql = 'SELECT * FROM order;';
-        $sth = $dbh->prepare($sql);
-        $sth->execute();
-        $rs[] = $sth->fetchAll();
-        //データが取得されたかどうかの確認
-        if(empty($rs[0][0])){
-            echo 'test_tableからidが取得できました';
-        }else{
-            echo 'test_tableからidを取得できませんでした';
-        }
+        $result = $dbh->query("SELECT * FROM order");
+        $rs = $result->fetchall(); 
         foreach($rs as $row):    
             print "<tr>";              // 表の明細行の始まり    
             print '<td>'.$row['商品名']."</td>";    
             print '<td>'.$row['価格']."</td>";  
             print '<td>'.$row['登録日']."</td>";    
             print "</tr>\n";             // 表の明細行の終わり
-
-
-
         endforeach; 
             print "</table>\n";             // 表の終わり 
 
