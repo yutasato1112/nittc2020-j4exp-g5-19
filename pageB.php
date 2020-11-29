@@ -25,7 +25,7 @@
             
             header('Location:pageA.php');
         }else{
-            header('Location:pageA.php');
+            header('Location:pageC.php');
        }
     }
 ?> 
