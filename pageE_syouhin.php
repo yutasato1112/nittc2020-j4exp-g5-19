@@ -20,7 +20,7 @@
         $sth->execute();
         $rs[] = $sth->fetchAll();
         //データが取得されたかどうかの確認
-        if(empty($id_list[0])){
+        if(empty($rs[0][0])){
             echo 'test_tableからidが取得できました';
         }else{
             echo 'test_tableからidを取得できませんでした';
