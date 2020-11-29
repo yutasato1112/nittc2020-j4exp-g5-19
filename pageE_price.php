@@ -11,25 +11,11 @@
         $rs = $result->fetchall(); 
         error_log('$rs:' . get_str_var_dump($rs));
 
-        if($rs == NULL){
-            print "no";
-        }else{
-            print "good";
-        }
         
 
     } catch (PDOException $e) {
         echo "接続失敗: " . $e-
     exit();
-    }
-
-
-    function get_str_var_dump($var){
-        ob_start(); // バッファリングON
-        var_dump($var);
-        $bar = ob_get_contents(); // バッファの内容を変数に格納
-        ob_end_clean(); // バッファを消去してバッファリングOFF
-        return $bar;
     }
 ?>
 </html>
