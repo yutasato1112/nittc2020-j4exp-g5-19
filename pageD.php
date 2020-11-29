@@ -14,7 +14,7 @@
     print "</form>";
     print "  〜  ";
     print "<form method=\"post\">";
-    print "<input type=\"text\" size=\"30\" name=\"low_price\"><br>\n";
+    print "<input type=\"text\" size=\"30\" name=\"high_price\"><br>\n";
     print "<input type=\"submit\" name=\"statusD_price\" value=\"送信\"><br><br><br>\n\n\n";
     print "</form>\n";
 
@@ -25,6 +25,10 @@
 </html>
 </body>
 <?php
+    $syouhin_name = $_POST["kensakumei"];
+    $Low_Price = $_POST["low_price"];
+    $High_Price = $_POST["high_price"];
+
 
     if( isset($_POST["statusDtoA"]) ){
         header('Location:pageA.php');

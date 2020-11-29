@@ -5,7 +5,8 @@ try{
     print "接続完了";
     $connect = new
     PDO("pgsql:host=ec2-52-206-15-227.compute-1.amazonaws.com;dbname=d90s2fmuo5249c;port=5432;user=jsavftjpgmyakf;password=aa711d82b8c4c7118a5c45c5c6cbfdb66b7a2ff2a3443de400e1532ecc29371b");
-    $sql = "SELECT * FROM gadget";
+    
+    $sql = "SELECT * FROM gadget WHERE 商品名 like '%$syouhin_name%'";
     $result = $connect->query($sql);
     
     print "<h3>デーベース検索結果</h3>\n"; // 表の開始(HTML タグ)
