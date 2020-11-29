@@ -18,14 +18,12 @@
     $result = $connect->query($sql_text); 
     print "<h3>検索結果</h3>\n";
     print "件数は".$result->rowCount()."件です";
-​
-    print "<table border=1 cellspacing=1 cellpadding=1>\n"; 
+    print "<table border=1 cellspacing=1 cellpadding=1>\n";
       print "<tr>"; 
       print "<th>商品名</th>"; 
       print "<th>価格</th>"; 
       print "<th>登録日</th>"; 
       print "</tr>"; 
-​
       $rs = $result->fetchall();
       foreach($rs as $row):
         print "<tr>"; 
@@ -34,8 +32,7 @@
         print '<td>'.$row['登録日']."</td>";
         print "</tr>\n"; 
       endforeach;
-      print "</table>\n"; 
-  }
+      print "</table>\n";
 ?>
 </html>
 </body>
