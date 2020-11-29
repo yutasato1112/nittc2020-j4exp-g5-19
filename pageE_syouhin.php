@@ -1,6 +1,7 @@
 <html>
 <body>
 <?php
+require('pageD.php');
 try{
     print "<form method=\"post\">\n";
     print "<input type=\"submit\" name=\"statusE_syouhintoD\" value=\"検索ページへ\">\n";
@@ -40,6 +41,6 @@ exit();
 </html>
 <body>
 <?php
-    if(isset($_POST["statusE_syouhintoD"])){
-        header('Location:pageD.php');
+    if(isset($_POST["statusC"]) ){
+        header('Location:pageA.php');
     }
