@@ -25,9 +25,10 @@ try{
         print "</tr>\n";             // 表の明細行の終わり
     endforeach; 
     print "</table>\n";             // 表の終わり 
-    
+
 } catch (PDOException $e) {
     echo "接続失敗: " . $e-
+    var_dump($e);
 exit();
 }
 ?>
