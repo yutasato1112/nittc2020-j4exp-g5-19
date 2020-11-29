@@ -25,9 +25,13 @@
 </html>
 </body>
 <?php
-    $syouhin_name = $_POST["kensakumei"];
+    /*$syouhin_name = $_POST["kensakumei"];
     $Low_Price = $_POST["low_price"];
     $High_Price = $_POST["high_price"];
+    */
+    $syouhin_name = "Dell";
+    $Low_Price = 1000;
+    $High_Price = 50000;
 
 
     if( isset($_POST["statusDtoA"]) ){
