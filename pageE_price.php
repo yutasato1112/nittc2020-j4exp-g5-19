@@ -30,7 +30,7 @@ try{
     foreach($rs as $row):    
         print "<tr>";              // 表の明細行の始まり    
         print '<td>'.$row['商品名']."</td>";    
-        print '<td>'.$row['価格']."</td>";    
+        print '<td align="right">'.$row['価格']."</td>";    
         print '<td>'.$row['登録日']."</td>";   
         print "</tr>\n";             // 表の明細行の終わり
     endforeach; 

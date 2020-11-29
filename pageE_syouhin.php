@@ -7,7 +7,6 @@
 <body>
 <?php
 try{
-    $syouhin_name = "Core";
     print "<form method=\"post\">\n";
     print "<input type=\"submit\" name=\"statusE_syouhintoD\" value=\"検索ページへ\">\n";
     print "</form>\n";
@@ -31,7 +30,7 @@ try{
     foreach($rs as $row):    
         print "<tr>";              // 表の明細行の始まり    
         print '<td>'.$row['商品名']."</td>";    
-        print '<td>'.$row['価格']."</td>";    
+        print '<td align="right">'.$row['価格']."</td>";    
         print '<td>'.$row['登録日']."</td>";   
         print "</tr>\n";             // 表の明細行の終わり
     endforeach; 
