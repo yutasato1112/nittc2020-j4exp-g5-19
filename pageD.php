@@ -28,8 +28,8 @@ session_start();
 </body>
 </html>
 <?php
-    $_SESSION['high']= $_POST["high_price"];
-    $_SESSION['low']= $_POST["low_price"];
+    $_SESSION['high']= $_GET["high_price"];
+    $_SESSION['low']= $_GET["low_price"];
     $_SESSION['syouhin_name']= $_POST["kensakumei"];
 
 
