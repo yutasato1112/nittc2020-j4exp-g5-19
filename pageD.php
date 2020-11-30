@@ -42,6 +42,6 @@ session_start();
         header('Location:pageE_syouhin.php');
     }
     if( isset($_POST["statusD_price"]) ){
-        header('Location:pageE_price.php?high_price=$high&low_price=$low');
+        header('Location:pageE_price.php?high_price="$high"&low_price="$low"');
     }
 ?>
