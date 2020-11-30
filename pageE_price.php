@@ -2,14 +2,15 @@
     if(isset($_POST["statusE_syouhintoD"]) ){
         header('Location:pageD.php');
     }
-    session_start();
-    $High_Price = $_GET['high_price'];
-    $Low_Price = $_GET['low_price'];
+    
 ?>
 <html>
 <body>
 <?php
 try{
+    session_start();
+    $High_Price = $_GET['high_price'];
+    $Low_Price = $_GET['low_price'];
     print "<form method=\"post\">\n";
     print "<input type=\"submit\" name=\"statusE_syouhintoD\" value=\"検索ページへ\">\n";
     print "</form>\n";
