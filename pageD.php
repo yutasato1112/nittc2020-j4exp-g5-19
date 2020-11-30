@@ -10,11 +10,11 @@
 
     print "価格検索<br?\n";
     print "<form method=\"post\">\n";
-    print "<input type=\"text\" size=\"30\" name=\"low_price\">";
+    print "<input type=\"number\" size=\"30\" name=\"low_price\">";
     print "</form>";
     print "  〜  ";
     print "<form method=\"post\">";
-    print "<input type=\"text\" size=\"30\" name=\"high_price\"><br>\n";
+    print "<input type=\"number\" size=\"30\" name=\"high_price\"><br>\n";
     print "</form>";
     print "<form method=\"post\">";
     print "<input type=\"submit\" name=\"statusD_price\" value=\"送信\"><br><br><br>\n\n\n";
