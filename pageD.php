@@ -11,17 +11,17 @@ session_start();
 
     print "価格検索<br?\n";
 
-    print '<form action = "pageE_price". method = "get">';
+    print '<form action = "pageE_price.php". method = "get">';
     print '<input type= "number" name="low_price" size="30">';
     print '</form>';
 
     print "  〜  ";
 
-    print '<form action = "pageE_price". method = "get">';
+    print '<form action = "pageE_price.php". method = "get">';
     print '<input type= "number" name="high_price" size="30">';
     print '</form>';
 
-    print '<form action = "pageE_price". method = "get">';
+    print '<form action = "pageE_price.php". method = "get">';
     print '<input type= "submit" value = "送信">';
     print '</form>';
 
