@@ -6,6 +6,8 @@
 <html>
 <body>
 <?php
+    $Low_Price = filter_input(INPUT_GET, 'high_price');
+    $High_Price = filter_input(INPUT_GET, 'low_price');
 try{
     print "<form method=\"post\">\n";
     print "<input type=\"submit\" name=\"statusE_syouhintoD\" value=\"検索ページへ\">\n";
