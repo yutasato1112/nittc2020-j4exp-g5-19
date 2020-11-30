@@ -3,8 +3,8 @@
         header('Location:pageD.php');
     }
     session_start();
-    $High_Price = $_SESSION['High_Price'];
-    $Low_Price = $_SESSION['Low_Price'];
+    $High_Price = $_SESSION['High'];
+    $Low_Price = $_SESSION['Low'];
 ?>
 <html>
 <body>
