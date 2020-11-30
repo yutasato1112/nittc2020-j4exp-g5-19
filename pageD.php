@@ -11,11 +11,11 @@ session_start();
 
     print "価格検索<br?\n";
     print '<form action = "pageE_price".method="get">';
-    print "<input type=\"number\" size=\"30\" name=\"low_price\" value='.$_SESSION[Low_Price].'>";
+    print "<input type=\"number\" size=\"30\" name=\"low_price\" value='.$a'>";
     print "</form>";
     print "  〜  ";
     print '<form action = "pageE_price".method="get">';
-    print "<input type=\"number\" size=\"30\" name=\"high_price\" value='.$_SESSION[High_Price].'><br>\n";
+    print "<input type=\"number\" size=\"30\" name=\"high_price\" value='.$b'><br>\n";
     print "</form>";
     print "<form method=\"post\">";
     print "<input type=\"submit\" name=\"statusD_price\" value=\"送信\"><br><br><br>\n\n\n";
@@ -28,7 +28,6 @@ session_start();
 </body>
 </html>
 <?php
-    session_start();
     $_SESSION['high']= $_POST["high_price"];
     $_SESSION['low']= $_POST["low_price"];
     $_SESSION['syouhin_name']= $_POST["kensakumei"];
