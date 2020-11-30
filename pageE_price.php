@@ -2,8 +2,10 @@
     if(isset($_POST["statusE_syouhintoD"]) ){
         header('Location:pageD.php');
     }
-    $High_Price = $_SESSION['High_Price'];
-    $Low_Price = $_SESSION['Low_Price'];
+    //$High_Price = $_SESSION['High_Price'];
+    //$Low_Price = $_SESSION['Low_Price'];
+    $High_Price = 50000;
+    $Low_Price = 10000;
 ?>
 <html>
 <body>
