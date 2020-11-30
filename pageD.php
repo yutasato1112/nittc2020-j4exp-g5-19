@@ -12,19 +12,19 @@ session_start();
     print "価格検索<br?\n";
 
     print '<form action = "pageE_price.php". method = "get">';
-    print '<input type= "number" name="low_price" size="30">';
+    print '<input type="number" name="low_price" /><br />';
 
     print "  〜  ";
 
-    print '<input type= "number" name="high_price" size="30">';
-    print '</form>';
-
-    print '<form action = "pageE_price.php". method = "get">';
-    print '<input type= "submit" value = "送信">';
+    print '<input type="number" name="high_price" /><br />';
     print '</form>';
 
     print "<form method=\"post\">\n";
-    print "<input type=\"submit\" name=\"statusDtoA\" value=\"商品登録ページへ\">\n";
+    print "<input type=\"submit\" name=\"statusDtoA\" value=\"送信\">\n";
+    print '</form>';
+
+    print "<form method=\"post\">\n";
+    print "<input type=\"submit\" name=\"statusD_price\" value=\"商品登録ページへ\">\n";
     print "</form>\n";
 ?>
 </body>
@@ -39,7 +39,7 @@ session_start();
     if( isset($_POST["statusD_syouhin"]) ){
         header('Location:pageE_syouhin.php');
     }
-    if( isset($_POST["statusD_price"]) ){
+    if( isset($_["statusD_price"]) ){
         header('Location:pageE_price.php');
     }
 ?>
