@@ -26,7 +26,7 @@ session_start();
     print "</form>\n";
     if( isset($_POST["statusD_price"]) ){
         //header('Location:pageE_price.php');
-        echo '$_SESSION["syouhin_name"]';
+        echo ($_SESSION["syouhin_name"]);
     }
 ?>
 </body>
