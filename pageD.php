@@ -10,11 +10,11 @@ session_start();
     print "</form>\n";
 
     print "価格検索<br?\n";
-    print "<form method=\"post\">\n";
+    print '<form action = "pageE_price".method="get">\n';
     print "<input type=\"number\" size=\"30\" name=\"low_price\" value='.$_SESSION[Low_Price].'>";
     print "</form>";
     print "  〜  ";
-    print "<form method=\"post\">";
+    print '<form action = "pageE_price".method="get">\n';
     print "<input type=\"number\" size=\"30\" name=\"high_price\" value='.$_SESSION[High_Price].'><br>\n";
     print "</form>";
     print "<form method=\"post\">";
