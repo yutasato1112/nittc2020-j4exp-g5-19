@@ -14,7 +14,7 @@ session_start();
     print '<form action = "pageE_price.php". method = "get">';
     print '<p><input type= "number" name="low_price" size="30" required>';
 
-    //print "  〜  ";
+    print "  〜  ";
 
     print '<input type= "number" name="high_price" size="30" required></p>';
     print '</form>';
@@ -40,6 +40,6 @@ session_start();
         header('Location:pageE_syouhin.php');
     }
     if( isset($_POST["statusD_price"]) ){
-        header('Location:pageE_price.php');
+        header('Location:pageE_price.php?high_price=100000&low_price=100');
     }
 ?>
