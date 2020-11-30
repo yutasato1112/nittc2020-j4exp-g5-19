@@ -24,10 +24,6 @@ session_start();
     print "<form method=\"post\">\n";
     print "<input type=\"submit\" name=\"statusDtoA\" value=\"商品登録ページへ\">\n";
     print "</form>\n";
-    if( isset($_POST["statusD_price"]) ){
-        //header('Location:pageE_price.php');
-        echo ($_SESSION["syouhin_name"]);
-    }
 ?>
 </body>
 </html>
@@ -44,3 +40,15 @@ session_start();
     if( isset($_POST["statusD_price"]) ){
         //header('Location:pageE_price.php');
     }
+?>
+
+<html>
+<body>
+<?php
+    if( isset($_POST["statusD_price"]) ){
+        //header('Location:pageE_price.php');
+        echo ($_SESSION["syouhin_name"]);
+    }
+?>
+</body>
+</html>
