@@ -45,6 +45,7 @@ session_start();
         header('Location:pageE_syouhin.php');
     }
     if( isset($_POST["statusD_price"]) ){
-        header('Location:pageE_price.php');
+        $redirect = 'pageE_price.php';
+        header("Location:$redirect");
     }
 ?>
