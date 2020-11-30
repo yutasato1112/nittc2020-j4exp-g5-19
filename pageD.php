@@ -20,6 +20,7 @@ session_start();
 
     print '<input type= "number" name="high_price" size="30" required></p>';
     print '</form>';
+    
 
     print "<form method=\"post\">\n";
     print "<input type=\"submit\" name=\"statusD_price\" value=\"送信\">\n";

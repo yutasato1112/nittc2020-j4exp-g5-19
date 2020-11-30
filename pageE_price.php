@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <?php
     if(isset($_POST["statusE_syouhintoD"]) ){
         header('Location:pageD.php');
