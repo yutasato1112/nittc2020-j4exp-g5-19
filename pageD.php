@@ -42,12 +42,10 @@ session_start();
         header('Location:pageE_syouhin.php');
     }
     if( isset($_POST["statusD_price"]) ){
-        $high = $_POST["high_price"];
-        $low =  $_POST["low_price"];
+        $high = 5;//$_POST["high_price"];
+        $low =  2;//$_POST["low_price"];
         $redirect = "pageE_price.php?high_price={$high}&low_price={$low}";
-        //echo "$redirect";
         //header("Location:$redirect");
-        $a = "Hello";
         echo "$redirect";
     }
 ?>
