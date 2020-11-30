@@ -31,6 +31,8 @@ session_start();
 </html>
 <?php
     $_SESSION['syouhin_name']= $_POST["kensakumei"];
+    $high = $_GET['high_price'];
+    $low = $_GET['low_price'];
 
 
     if( isset($_POST["statusDtoA"]) ){
@@ -40,6 +42,6 @@ session_start();
         header('Location:pageE_syouhin.php');
     }
     if( isset($_POST["statusD_price"]) ){
-        header('Location:pageE_price.php?high_price=100000&low_price=100');
+        header('Location:pageE_price.php?high_price=$high&low_price=$low');
     }
 ?>
