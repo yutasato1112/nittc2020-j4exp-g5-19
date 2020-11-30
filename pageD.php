@@ -45,7 +45,7 @@ session_start();
         $high = $_POST["high_price"];
         $low =  htmlspecialchars($_POST['low_price'], ENT_QUOTES);
         $redirect = "pageE_price.php?high_price={$high}&low_price={$low}";
-        echo '$redirect';
+        echo "$redirect";
         //header("Location:$redirect");
     }
 ?>
