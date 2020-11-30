@@ -43,9 +43,11 @@ session_start();
     }
     if( isset($_POST["statusD_price"]) ){
         $high = $_POST["high_price"];
-        $low =  htmlspecialchars($_POST['low_price'], ENT_QUOTES);
+        $low =  $_POST["low_price"];
         $redirect = "pageE_price.php?high_price={$high}&low_price={$low}";
-        echo "$redirect";
+        //echo "$redirect";
         //header("Location:$redirect");
+        $a = "Hello";
+        echo "$a";
     }
 ?>
