@@ -13,18 +13,17 @@ session_start();
 
     print "価格検索<br?\n";
 
-    print '<form action = "pageE_price.php". method = "get">';
-    print '<p><input type= "number" name="low_price" size="30" required>';
+    print "<form method=\"post\">\n";
+    print "<input type=\"number\" size=\"30\" name=\"low_price\"><br>\n";
 
     print "  〜  ";
 
-    print '<input type= "number" name="high_price" size="30" required></p>';
-    print '</form>';
-    
+    print "<input type=\"number\" size=\"30\" name=\"high_price\"><br>\n";  
+    print "</form>";
 
     print "<form method=\"post\">\n";
     print "<input type=\"submit\" name=\"statusD_price\" value=\"送信\">\n";
-    print '</form>';
+    print "</form>";
 
     print "<form method=\"post\">\n";
     print "<input type=\"submit\" name=\"statusDtoA\" value=\"商品登録ページへ\">\n";
@@ -34,8 +33,8 @@ session_start();
 </html>
 <?php
     $_SESSION['syouhin_name']= $_POST["kensakumei"];
-    $high = $_GET['high_price'];
-    $low = $_GET['low_price'];
+    $high = $_POST['high_price'];
+    $low = $_POST['low_price'];
 
 
     if( isset($_POST["statusDtoA"]) ){
