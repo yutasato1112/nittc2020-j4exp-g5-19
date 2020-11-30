@@ -13,11 +13,9 @@ session_start();
 
     print '<form action = "pageE_price.php". method = "get">';
     print '<input type= "number" name="low_price" size="30">';
-    print '</form>';
 
     print "  〜  ";
 
-    print '<form action = "pageE_price.php". method = "get">';
     print '<input type= "number" name="high_price" size="30">';
     print '</form>';
 
