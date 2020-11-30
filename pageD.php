@@ -33,8 +33,8 @@ session_start();
 </html>
 <?php
     $_SESSION['syouhin_name']= $_POST["kensakumei"];
-    $high = htmlspecialchars($_POST['high_price'], ENT_QUOTES);
-    $low =  htmlspecialchars($_POST['low_price'], ENT_QUOTES);
+    $high = 100000;//htmlspecialchars($_POST['high_price'], ENT_QUOTES);
+    $low =  100;//htmlspecialchars($_POST['low_price'], ENT_QUOTES);
 
 
     if( isset($_POST["statusDtoA"]) ){
