@@ -20,11 +20,11 @@ session_start();
     print '</form>';
 
     print "<form method=\"post\">\n";
-    print "<input type=\"submit\" name=\"statusDtoA\" value=\"送信\">\n";
+    print "<input type=\"submit\" name=\"statusD_price\" value=\"送信\">\n";
     print '</form>';
 
     print "<form method=\"post\">\n";
-    print "<input type=\"submit\" name=\"statusD_price\" value=\"商品登録ページへ\">\n";
+    print "<input type=\"submit\" name=\"statusDtoA\" value=\"商品登録ページへ\">\n";
     print "</form>\n";
 ?>
 </body>
