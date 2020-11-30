@@ -48,6 +48,6 @@ session_start();
         //echo "$redirect";
         //header("Location:$redirect");
         $a = "Hello";
-        echo "$a";
+        echo "$redirect";
     }
 ?>
