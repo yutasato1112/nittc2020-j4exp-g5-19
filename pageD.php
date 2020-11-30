@@ -33,8 +33,6 @@ session_start();
 </html>
 <?php
     $_SESSION['syouhin_name']= $_POST["kensakumei"];
-    $high = 100000;//htmlspecialchars($_POST['high_price'], ENT_QUOTES);
-    $low =  100;//htmlspecialchars($_POST['low_price'], ENT_QUOTES);
 
 
     if( isset($_POST["statusDtoA"]) ){
@@ -44,6 +42,9 @@ session_start();
         header('Location:pageE_syouhin.php');
     }
     if( isset($_POST["statusD_price"]) ){
+
+        $high = htmlspecialchars($_POST['high_price'], ENT_QUOTES);
+        $low =  htmlspecialchars($_POST['low_price'], ENT_QUOTES);
         $redirect = "pageE_price.php?high_price={$high}&low_price={$low}";
         header("Location:$redirect");
     }
