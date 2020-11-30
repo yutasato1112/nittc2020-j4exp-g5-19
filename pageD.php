@@ -24,8 +24,8 @@
     print "<input type=\"submit\" name=\"statusDtoA\" value=\"商品登録ページへ\">\n";
     print "</form>\n";
 ?>
-</html>
 </body>
+</html>
 <?php
     session_start();
     $_SESSION['syouhin_name']= $_POST["kensakumei"];
