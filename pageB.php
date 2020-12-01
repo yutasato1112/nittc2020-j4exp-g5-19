@@ -4,18 +4,12 @@
     登録しますか?<br>
     <input type="radio" name="YesorNo" value="yes">はい
     <input type="radio" name="YesorNo" value="no">いいえ
+    <input type="submit">
     <br>
 </form>
 <?php
-    print "<form method=\"post\">\n";
-    print "<input type=\"submit\" name=\"aiueo\" value=\"送信\">\n";
-    print "</form>\n";
-?>
-</body>
-</html>
-<?php
     $value = $_GET['YesorNo'];
-    if(isset($_POST["aiueo"])){
+    //if(isset($_POST["aiueo"])){
         if ($value == "yes") {
             echo "$value";
             /*$syouhinmei = $_GET['syouhin'];
@@ -37,4 +31,4 @@
             //header('Location:pageC.php');
         }
         echo "aiu";
-    }
+    //}
