@@ -8,11 +8,11 @@
     <br>
 </form>
 <?php
+    $syouhinmei = $_GET['syouhin'];
+    $price = $_GET['kakaku'];
     $value = $_GET['YesorNo'];
+    
         if ($value == "yes") {
-            $syouhinmei = $_GET['syouhin'];
-            $price = $_GET['kakaku'];
-
             $timestamp = time();
             $date = date("Y/m/d", $timestamp);
             $connect = new
