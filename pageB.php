@@ -17,7 +17,8 @@
     $value = $_GET['YesorNo'];
     if(isset($_POST["go"])){
         if ($value == "yes") {
-            $syouhinmei = $_GET['syouhin'];
+            echo "$value";
+            /*$syouhinmei = $_GET['syouhin'];
             $price = $_GET['kakaku'];
 
             $timestamp = time();
@@ -27,10 +28,13 @@
             $sql_add = "INSERT INTO gadget (商品名, 価格, 登録日) VALUES ($syouhinmei, $price, $date)";
             $result = $connect -> quety($sql_add);
             header('Location:pageD.php');
-
+            */
         }elseif ($value == "no"){
-            header('Location:pageA.php');
+            echo "$value";
+            //header('Location:pageA.php');
         }else{
-            header('Location:pageC.php');
+            echo "$value";
+            //header('Location:pageC.php');
         }
+        echo "aiu";
     }
