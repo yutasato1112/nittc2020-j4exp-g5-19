@@ -12,9 +12,9 @@
 </body>
 <?php
     if(isset($_POST["statusB"])){
-        if($_POST['youserchoice'] == "yes"){
-            $syouhinmei = ;
-            $price = ;
+        if($_POST['userchoice'] == "yes"){
+            $syouhinmei = $_GET['syouhin'];
+            $price = $_GET['kakaku'];
 
             $timestamp = time();
             $date = date("Y/m/d", $timestamp);
