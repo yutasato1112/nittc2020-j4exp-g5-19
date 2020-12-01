@@ -1,14 +1,21 @@
+<html>
+<body>
 <form>
     登録しますか?<br>
     <input type="radio" name="YesorNo" value="yes">はい
     <input type="radio" name="YesorNo" value="no">いいえ
     <br>
-    <input type="submit" name="sousin">
 </form>
 <?php
-    $sousin = $_GET['sousin'];
+    print "<form method=\"post\">\n";
+    print "<input type=\"submit\" name=\"go\" value=\"送信\">\n";
+    print "</form>\n";
+?>
+</body>
+</html>
+<?php
     $value = $_GET['YesorNo'];
-    if($sousin == "送信"){
+    if(isset($_POST["go"])){
         if ($value == "yes") {
             $syouhinmei = $_GET['syouhin'];
             $price = $_GET['kakaku'];
@@ -27,4 +34,3 @@
             header('Location:pageC.php');
         }
     }
-?>
