@@ -23,6 +23,4 @@
             
         }elseif ($value == "no"){
             header('Location:pageA.php');
-        }else{
-            header('Location:pageC.php');
         }
