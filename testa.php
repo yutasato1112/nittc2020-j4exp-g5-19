@@ -11,6 +11,8 @@
     if($sousin == true){
         if ($value == yes) {
             header('Location:pageA.php');
+        }elseif ($value == no){
+            header('Location:pageA.php');
         }else{
             header('Location:pageC.php');
         }
