@@ -1,3 +1,10 @@
+<!DOCTYPE html>
+<?php 
+    $syouhinmei = $_GET['syouhin'];
+    $price = $_GET['kakaku'];
+?>
+
+
 <html>
 <body>
 <form>
@@ -7,9 +14,9 @@
     <input type="submit">
     <br>
 </form>
+</body>
+</html>
 <?php
-    $syouhinmei = $_GET['syouhin'];
-    $price = $_GET['kakaku'];
     $value = $_GET['YesorNo'];
         if ($value == "yes") {
             echo "$syouhinmei";
