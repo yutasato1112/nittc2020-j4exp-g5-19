@@ -5,8 +5,8 @@
 <?php
     $A = $_GET['a'];
     $B = $_GET['b'];
-    echo "$A";
-    echo "$B";
+    echo "$A<br>";
+    echo "$B<br>";
 ?>
 </body>
 </html>
