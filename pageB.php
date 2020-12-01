@@ -8,14 +8,14 @@
 </form>
 <?php
     print "<form method=\"post\">\n";
-    print "<input type=\"submit\" name=\"go\" value=\"送信\">\n";
+    print "<input type=\"submit\" name=\"aiueo\" value=\"送信\">\n";
     print "</form>\n";
 ?>
 </body>
 </html>
 <?php
     $value = $_GET['YesorNo'];
-    if(isset($_POST["go"])){
+    if(isset($_POST["aiueo"])){
         if ($value == "yes") {
             echo "$value";
             /*$syouhinmei = $_GET['syouhin'];
