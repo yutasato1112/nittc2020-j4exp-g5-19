@@ -7,7 +7,9 @@
 </form>
 <?php
     $value = $_GET['YesorNo'];
-    if ($value) {
-        echo "私は". $value;
+    if ($value == yes) {
+        header('Location:pageA.php');
+    }else{
+        header('Location:pageC.php');
     }
 ?>
