@@ -9,7 +9,6 @@
 </form>
 <?php
     $value = $_GET['YesorNo'];
-    //if(isset($_POST["aiueo"])){
         if ($value == "yes") {
             echo "$value";
             /*$syouhinmei = $_GET['syouhin'];
@@ -30,5 +29,3 @@
             echo "$value";
             //header('Location:pageC.php');
         }
-        echo "aiu";
-    //}
