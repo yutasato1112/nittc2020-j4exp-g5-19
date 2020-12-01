@@ -8,7 +8,7 @@
 <?php
     $sousin = $_GET['sousin'];
     $value = $_GET['YesorNo'];
-    if($sousin == true){
+    if($sousin == "送信"){
         if ($value == "yes") {
             $syouhinmei = $_GET['syouhin'];
             $price = $_GET['kakaku'];
