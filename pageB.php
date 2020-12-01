@@ -10,7 +10,6 @@
     $value = $_GET['YesorNo'];
     if($sousin == true){
         if ($value == "yes") {
-            header('Location:pageA.php');
             $syouhinmei = $_GET['syouhin'];
             $price = $_GET['kakaku'];
 
