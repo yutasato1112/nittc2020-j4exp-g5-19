@@ -11,8 +11,8 @@
     $syouhinmei = $_GET['syouhin'];
     $price = $_GET['kakaku'];
     $value = $_GET['YesorNo'];
-    echo "$value";
         if ($value == "yes") {
+            echo "konnnitiwa";
             $timestamp = time();
             $date = date("Y/m/d", $timestamp);
             $connect = new
