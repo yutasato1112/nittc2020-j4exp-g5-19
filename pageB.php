@@ -9,7 +9,7 @@
     $sousin = $_GET['sousin'];
     $value = $_GET['YesorNo'];
     if($sousin == true){
-        if ($value == yes) {
+        if ($value == "yes") {
             header('Location:pageA.php');
             $syouhinmei = $_GET['syouhin'];
             $price = $_GET['kakaku'];
@@ -22,7 +22,7 @@
             $result = $connect -> quety($sql_add);
             header('Location:pageD.php');
 
-        }elseif ($value == no){
+        }elseif ($value == "no"){
             header('Location:pageA.php');
         }else{
             header('Location:pageC.php');
