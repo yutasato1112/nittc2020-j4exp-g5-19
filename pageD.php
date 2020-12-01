@@ -13,17 +13,13 @@ session_start();
 
     print "価格検索<br>\n";
 
-    print "<form method=\"post\">\n";
-    print "<input type=\"number\" size=\"30\" name=\"low_price\"><br>\n";
-
-    print "  〜  ";
-
-    print "<input type=\"number\" size=\"30\" name=\"high_price\"><br>\n";  
-    print "</form>";
-
-    print "<form method=\"post\">\n";
-    print "<input type=\"submit\" name=\"statusD_price\" value=\"送信\">\n";
-    print "</form>";
+    print '<form action="pageE_price.php" method="get">';
+    print "最低価格<br>\n";
+    print '<input type="number"     name="low_price" value="" size="20" maxlength="20"><br>';
+    print "最高価格<br>\n";
+    print '<input type="number"     name="high_price" value="" size="20" maxlength="20"><br>';
+    print ' <input type="submit" />';
+    print '</form>' ;
 
     print "<form method=\"post\">\n";
     print "<input type=\"submit\" name=\"statusDtoA\" value=\"商品登録ページへ\">\n";
@@ -40,12 +36,5 @@ session_start();
     }
     if( isset($_POST["statusD_syouhin"]) ){
         header('Location:pageE_syouhin.php');
-    }
-    if( isset($_POST["statusD_price"]) ){
-        $high = $_POST["high_price"];
-        $low =  $_POST["low_price"];
-        $redirect = "pageE_price.php?high_price={$high}&low_price={$low}";
-        //header("Location:$redirect");
-        echo "$redirect";
     }
 ?>
