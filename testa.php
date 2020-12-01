@@ -1,14 +1,13 @@
-<!DOCTYPE html>
-<html lang = "ja">
-<html>
-<body>
+<form>
+    あなたは学生ですか?<br>
+    <input type="radio" name="student" value="学生です">はい
+    <input type="radio" name="student" value="学生ではありません">いいえ
+    <br>
+    <input type="submit">
+</form>
 <?php
-    print '<form action="pageE_price.php" method="get">';
-    print '<input type="number"     name="low_price" value="" size="20" maxlength="20"><br>';
-    print '<input type="number"     name="high_price" value="" size="20" maxlength="20"><br>';
-    print ' <input type="submit" />';
-    print '</form>' ;
-
+    $value = $_GET['student'];
+    if ($value) {
+        echo "私は". $value;
+    }
 ?>
-</body>
-</html>
