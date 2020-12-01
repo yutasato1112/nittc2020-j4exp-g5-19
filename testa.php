@@ -3,7 +3,7 @@
 <html>
 <body>
 <?php
-    print '<form action="xxxx.php" method="get">';
+    print '<form action="testb.php" method="get">';
     print '<input type="number"     name="a" value="" size="20" maxlength="20">';
     print ' <input type="submit" />';
     print '</form>' ;
