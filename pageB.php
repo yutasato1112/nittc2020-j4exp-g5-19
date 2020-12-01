@@ -11,7 +11,7 @@
     $syouhinmei = $_GET['syouhin'];
     $price = $_GET['kakaku'];
     $value = $_GET['YesorNo'];
-    
+    echo "$value";
         if ($value == "yes") {
             $timestamp = time();
             $date = date("Y/m/d", $timestamp);
