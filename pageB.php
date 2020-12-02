@@ -1,33 +1,20 @@
 <!DOCTYPE html>
-<?php 
-    $syouhinmei = $_GET['syouhin'];
-    $price = $_GET['kakaku'];
-?>
-
-
 <html>
 <body>
-<form>
-    登録しますか?<br>
-    <input type="radio" name="YesorNo" value="yes">はい
-    <input type="radio" name="YesorNo" value="no">いいえ
-    <input type="submit">
-    <br>
-</form>
+<?php
+    $syouhin = $_GET['syouhin'];
+    $price = $_GET['kakaku'];
+
+    print "{$syouhin}を{$price}円で登録しますか<br>";
+?>
+    <form action="./pageB_1.php" method="GET">
+    <input type="radio" name="userchoice" value="yes"/>はい<br/>
+    <input type="radio" name="userchoice" value="no"/>いいえ<br/>
+    <input type="submit" value="送信"/>
+    </form>
 </body>
 </html>
 <?php
-    $value = $_GET['YesorNo'];
-        if ($value == "yes") {
-            echo "$syouhinmei";
-            echo "$price";
-            $timestamp = time();
-            $date = date("Y/m/d", $timestamp);
-            $connect = new
-            PDO("pgsql:host=ec2-52-206-15-227.compute-1.amazonaws.com;dbname=d90s2fmuo5249c;port=5432;user=jsavftjpgmyakf;password=aa711d82b8c4c7118a5c45c5c6cbfdb66b7a2ff2a3443de400e1532ecc29371b"); 
-            $sql_add = "INSERT INTO gadget (商品名, 価格, 登録日) VALUES ($syouhinmei, $price, $date)";
-            $result = $connect -> quety($sql_add);
-            header('Location:pageD.php');
-        }elseif ($value == "no"){
-            header('Location:pageA.php');
-        }
+    session_start();
+    $_SESSION['syouhin'] = $syouhin;
+    $_SESSION['kakaku'] = $price;
