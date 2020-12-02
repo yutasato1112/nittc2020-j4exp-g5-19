@@ -18,5 +18,5 @@
 </body>
 <?php
     if( isset($_POST["statusAtoD"]) ){
-        header('Location:pageD.php');
+        header('Location:testa.php');
     }

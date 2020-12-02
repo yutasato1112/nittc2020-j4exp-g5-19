@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<html lang = "ja">
 <html>
 <body>
 <?php
-    $A = $_GET['a'];
-    $B = $_GET['b'];
-    echo "$A<br>";
-    echo "$B<br>";
+    $syouhin = $_GET['syouhin'];
+    $price = $_GET['kakaku'];
+    echo "$syouhin";
+    echo "$price";
 ?>
 </body>
 </html>
