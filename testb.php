@@ -4,8 +4,6 @@
 <?php
     $syouhin = $_GET['syouhin'];
     $price = $_GET['kakaku'];
-    echo "$syouhin";
-    echo "$price";
 
     print "{$syouhin}を{$price}円で登録しますか<br>";
 ?>
@@ -16,3 +14,7 @@
     </form>
 </body>
 </html>
+<?php
+    session_start();
+    $_SESSION['syouhin'] = $syouhin;
+    $_SESSION['kakaku'] = $price;
