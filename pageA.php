@@ -7,11 +7,11 @@
     print '<input type="text"     name="syouhin" value="" size="20" maxlength="20"><br>';
     print "価格を入力<br>";
     print '<input type="number"     name="kakaku" value="" size="20" maxlength="20"><br>';
-    print ' <input type="submit" />';
+    print '<input type="submit" />';
     print '</form>' ;
 
-    print "<form method=\"post\">\n";
-    print "<input type=\"submit\" name=\"statusAtoD\" value=\"商品検索ページへ\">\n";
+    print '<form action="testD.php" method="get">';
+    print '<input type="submit" />';
     print "</form>\n";
 ?>
 </html>
