@@ -10,8 +10,8 @@
     print '<input type="submit" />';
     print '</form>' ;
 
-    print '<form action="testD.php" method="get">';
-    print '<input type="submit" />';
+    print '<form action="pageD.php" method="get">';
+    print '<input type="submit" value="商品検索ページへ/>';
     print "</form>\n";
 ?>
 </html>
