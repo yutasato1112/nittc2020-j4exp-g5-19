@@ -9,10 +9,9 @@
     print '<input type="number"     name="kakaku" value="" size="20" maxlength="20"><br>';
     print '<input type="submit" />';
     print '</form>' ;
-
-    print '<form action="pageD.php" method="get">';
-    print '<input type="submit" value="商品検索ページへ/>';
-    print "</form>\n";
 ?>
+    <form action="pageD" method="post">
+    <input type="submit" value="送信する"> 
+    </form>
 </html>
 </body>
