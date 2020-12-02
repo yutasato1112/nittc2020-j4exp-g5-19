@@ -7,13 +7,9 @@
         session_start();
         $syouhinmei = $_SESSION['syouhin'];
         $price = $_SESSION['kakaku'];
-        echo "$choice";
-        echo "$syouhinmei";
-        echo "$price";
-
         try{
             PDO("pgsql:host=ec2-52-206-15-227.compute-1.amazonaws.com;dbname=d90s2fmuo5249c;port=5432;user=jsavftjpgmyakf;password=aa711d82b8c4c7118a5c45c5c6cbfdb66b7a2ff2a3443de400e1532ecc29371b");
-            $sql_text = "insert into gadget values ('$syouhinmei', '$price', '$date')"; 
+            $sql_text = "INSERT INTO gadget values ('$syouhinmei', '$price', '$date')"; 
             $result = $connect->query($sql_text); 
         }catch(PDOException $e){
             echo '予期しないエラーが発生しました。';
