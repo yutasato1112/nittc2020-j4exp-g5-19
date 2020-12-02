@@ -16,7 +16,7 @@
         header('Location:pageA.php');
     }
 ?>
-    <p>登録完了</p>
+    <p>登録完了</p> 
     <form action="pageA.php" method="post">
     <input type="submit" value="送信する">
     </form>
