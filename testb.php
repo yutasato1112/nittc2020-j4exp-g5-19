@@ -2,6 +2,9 @@
 <html>
 <body>
 <?php
+    $syouhin = $_GET['syouhin'];
+    $price = $_GET['kakaku'];
+
     print "{$syouhin}を{$price}円で登録しますか<br>";
 ?>
     <form action="./testc.php" method="GET">
