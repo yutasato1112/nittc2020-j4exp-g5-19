@@ -7,11 +7,12 @@
     echo "$syouhin";
     echo "$price";
 
-    print "登録しますか<br>";
-    print '<form action = "testa.php method="get"">';
-    print '<input type=\"radio\" name=\"userchoice\" value=\"yes\">はい<br>';
-    print '<input type=\"radio\" name=\"userchoice\" value=\"no\">いいえ<br>';
-    print '</form>'
+    print "{$syouhin}を{$price}円で登録しますか<br>";
 ?>
+    <form action="./testc.php" method="GET">
+    <input type="radio" name="userchoice" value="yes"/>はい<br/>
+    <input type="radio" name="userchoice" value="no"/>いいえ<br/>
+    <input type="submit" value="送信"/>
+    </form>
 </body>
 </html>
