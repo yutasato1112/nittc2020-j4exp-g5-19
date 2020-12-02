@@ -7,6 +7,8 @@
         session_start();
         $syouhinmei = $_SESSION['syouhin'];
         $price = $_SESSION['kakaku'];
+        $timestamp = time();
+        $date = date("Y/m/d", $timestamp);
         try{
             $connect = new
             PDO("pgsql:host=ec2-52-206-15-227.compute-1.amazonaws.com;dbname=d90s2fmuo5249c;port=5432;user=jsavftjpgmyakf;password=aa711d82b8c4c7118a5c45c5c6cbfdb66b7a2ff2a3443de400e1532ecc29371b");
