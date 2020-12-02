@@ -16,7 +16,3 @@
 ?>
 </html>
 </body>
-<?php
-    if( isset($_POST["statusAtoD"]) ){
-        header('Location:testa.php');
-    }
