@@ -1,0 +1,33 @@
+.syohin_touroku{
+    font-size: 4vw;
+    text-align: center;
+    color: whitesmoke;
+    height: 15vh;
+    background-color: black;
+    text-align: center;
+    line-height: 15vh;
+}
+.space{
+    height: 8vh;
+}
+.zentai{
+    background-color: rgb(250, 242, 232);
+}
+.nyuryoku{
+    text-align: center;
+    height: 10vh;
+    width: 50vw;
+    font-size: 2.5vw;
+    margin: auto;   
+}
+.small_space{
+    height: 2vh;
+}
+.sousin{
+    font-size: 1.5vw;
+    text-align: right;
+    position: relative;
+    right: 10vw;
+    margin-top: 15vh;
+    
+}

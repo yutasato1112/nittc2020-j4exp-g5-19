@@ -1,0 +1,31 @@
+.kakunin{
+    font-size: 4vw;
+    text-align: center;
+    color: whitesmoke;
+    height: 15vh;
+    background-color: black;
+    text-align: center;
+    line-height: 15vh;
+}
+.space{
+    height: 8vh;
+}
+.zentai{
+    background-color: rgb(250, 242, 232);
+}
+.sentence{
+    text-align: center;
+    height: 10vh;
+    width: 50vw;
+    font-size: 2vw;
+    margin: auto;  
+}
+.choice{
+    display: flex;
+    font-size: 2vw;
+    text-align: center;
+    margin: auto;
+    width: 20vw;
+    position: relative;
+    left: 3vw;
+}
