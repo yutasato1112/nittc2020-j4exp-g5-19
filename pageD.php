@@ -9,6 +9,7 @@
 </head>
 <body>
 <?php
+error_reporting(0);
 session_start();
     print "<div class =kensaku_jouken>";
         print "検索条件<br>\n";
